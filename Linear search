@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+  // Begin
+  // set arr[5]<-{10,20,30,40,50};
+  //set i<-0
+  //input searching item 
+  //repeat step 6 & 7 whilei<5
+  //if arr[i]=item then print item found and exit location =item
+  //i<-i+1
+  //if i>=5 then print item not found
+  //end
+  
+  int arr[5]={10,20,30,40,50};
+  int item;
+  int i=0;
+  
+  printf("Enter searching item");
+  scanf("%d",&item);
+  while(i<5)
+  {
+      
+     if(arr[i]==item)
+     {
+         printf("item found %d at %d possition",item,i);
+         break;
+     }
+     i++;
+  }
+    if(i>=5)
+     {
+         printf("Item not found try again");
+     }
+    return 0;
+}
